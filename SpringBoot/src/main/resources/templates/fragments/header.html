@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Header Fragment</title>
+</head>
+<body>
+<div th:fragment="header">
+    <header>
+        <div class="top-links">
+            <a href="#">회원 가입</a>
+            <a href="#">로그인</a>
+        </div>
+        <div class="header-content">
+            <h1><a href="/" th:href="@{/}">Phycho Inside</a></h1>
+            <div class="search-container">
+                <form th:action="@{/search}" method="get">
+                    <input type="text" name="q" placeholder="갤러리 검색">
+                    <button type="submit" class="search-button"><img th:src="@{/images/search_img.png}" alt="검색"></button> <!-- 돋보기 버튼 이미지 -->
+                </form>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">인기글</a></li>
+                <li><a href="#">갤러리</a></li>
+                <li><a href="#">싸패 위키</a></li>
+                <li><a href="#">코딩</a></li>
+                <li><a href="#">공지</a></li>
+            </ul>
+            <button class="ranking-button">싸패 랭킹</button>
+        </nav>
+    </header>
+</div>
+</body>
+</html>

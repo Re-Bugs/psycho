@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-links {
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    max-width: 1200px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.top-links a {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* 상대 위치 설정 */
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* 수평 가운데 정렬 */
+}
+
+.header-content h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* 오른쪽으로 정렬 */
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 0;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.ranking-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.ranking-button:hover {
+    background-color: #c0392b;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.announcement {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.announcement-1 {
+    background-color: #f8d7da;
+}
+
+.announcement-2 {
+    background-color: #d1ecf1;
+}
+
+.announcement-3 {
+    background-color: #fff3cd;
+}
